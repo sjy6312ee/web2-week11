@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WMW - World Minimum Wage in 2021</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		head, body, html, div, section, footer{margin:0;
+			overflow: hidden;}
+		html{background:#1A1A1A;}
+		a{display:block; width: 30px; height: 10px;}
+		h1{color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 400;
+			font-size: 1.8em;
+			text-align: left;
+			line-height: 35px;
+			letter-spacing: -1px;
+			margin-top: 5px;
+			margin-left: 10px;
+			margin-bottom: 0px;}
+		h2{color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 400;
+			font-size: 0.7em;
+			text-align: left;
+			letter-spacing: 0px;
+			margin-top: 8px;
+			margin-left: 7px;
+			margin-bottom: 0px;}
+		h3{color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 400;
+			font-size: 2.7em;
+			text-align: left;
+			letter-spacing: -1px;
+			margin-top: 15px;
+			margin-left: 10px;
+			margin-bottom: 0px;
+			height: 50px;}
+		footer{color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 300;
+			font-size: 0.8em;
+			text-align: center;
+			margin-top: 0px;
+			margin-bottom: 10px;}
+
+		.header{color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 300;
+			font-size: 10em;
+			margin-left: 30px;
+			margin-top: 2px;
+			line-height: 150px;
+			letter-spacing: -8px;
+			text-align: left;
+			margin-bottom: 270px;
+			z-index: 5;}
+		.exchangerate{color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 300;
+			font-size: 1em;
+			line-height: 10px;
+			text-align: left;
+			top: 10px; left: 500px;
+			z-index: 3;}
+		.subheader{color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 300;
+			font-size: 1em;
+			line-height: 10px;
+			text-align: left;
+			top: 10px; left: 1050px;
+			z-index: 3;}
+		.logo{top: 25px; left: 1360px;
+			z-index: 3;}
+
+		section{}
+		.row{/*width: 1500px; height: 440px;*/
+			margin:auto; margin-right: 30px; margin-bottom: 12px;
+			display: flex;}
+		.marginright0{margin-right: 0px;}
+		.col-5{width: 275px; margin: 0px 4px;}
+		.gap{margin: 12px; justify-content: center;}
+
+		#asia{text-align: right;
+			color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 300;
+			font-size: 1.3em;
+			margin-bottom: -10px;}
+		#kor{background: #11A79B;
+				height: 110px;
+				transition: .3s ease; opacity: 1;}
+		#pinkkor{position: absolute; top: 0%; left: calc(50% - 270px);
+				width: 540px;
+				animation: rotate 4s infinite linear;
+				opacity:0;
+				z-index: 0;}
+		@keyframes rotate {
+  			from {transform: rotate(20deg);}
+  			to {transform: rotate(380deg);}
+				}
+		#kor:hover{background: #EE5864;
+					transition: .1s ease; opacity:1;}
+
+		#jpn{background: #11A79B;
+				height: 140px;}
+		#pinkjpn{position: absolute; top: 0%; left: calc(50% - 380px);
+				width: 760px;
+				animation: rotate 4s infinite linear;
+				opacity:0;}
+		@keyframes rotate {
+  			from {transform: rotate(20deg);}
+  			to {transform: rotate(380deg);}
+				}
+		#jpn:hover{background: #EE5864;
+				transition: .1s ease; opacity:1;}
+
+		#america{text-align: right;
+			color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 300;
+			font-size: 1.3em;
+			margin-bottom: -10px;}
+		#usa{background: #F59D33;
+				height: 220px;}
+		#usa:hover{background: #EE5864;
+				transition: .1s ease; opacity:1;}	
+
+		#africa{text-align: right;
+			color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 300;
+			font-size: 1.3em;
+			margin-bottom: -10px;}
+		#zaf{background: #7DC04F;
+				height: 83px;}
+		#pinkzaf{position: absolute; top: 0%; left: calc(50% - 400px);
+				animation: rotate 4s infinite linear;
+				opacity:0;}
+		@keyframes rotate {
+  			from {transform: rotate(20deg);}
+  			to {transform: rotate(380deg);}
+				}
+		#zaf:hover{background: #EE5864;
+				transition: .1s ease; opacity:1;}
+
+		#europe{text-align: right;
+			color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 300;
+			font-size: 1.3em;
+			margin-bottom: -10px;}
+		#deu{background: #9A68EB;
+				height: 175px;}
+		#deu:hover{background: #EE5864;
+				transition: .1s ease; opacity:1;}
+		#fra{background: #9A68EB;
+				height: 180px;}
+		#fra:hover{background: #EE5864;
+				transition: .1s ease; opacity:1;}
+		#gbr{background: #9A68EB;
+				height: 179px;}
+		#gbr:hover{background: #EE5864;
+				transition: .1s ease; opacity:1;}
+
+		#australia{text-align: right;
+			color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 300;
+			font-size: 1.3em;
+			margin-bottom: -10px;}
+		#aus{background: #43B9DD;
+				height: 300px;}
+		#aus:hover{background: #EE5864;
+				transition: .1s ease; opacity:1;}
+
+
+		.absolutegraph{position: absolute;
+						top: 100px; left: 110px;
+						bottom: 0;
+						z-index: 7;}
+		.boxspace{margin: 0;}
+
+		.marginjpn{margin-top: 45px;}
+		.marginusa{margin-top: 90px;}
+		.marginzaf{margin-top: -11px;}
+		.margindeu{margin-top: 79px;}
+		.marginfra{margin-top: 85px;}
+		.margingbr{margin-top: 85px;}
+		.marginaus{margin-top: 203px;}
+
+		.arrowkor{margin-top: 20px;
+			margin-left: 40px;
+			margin-bottom: 0px;
+			justify-content: right;}
+		.arrowjpn{margin-top: 48px;
+			margin-left: 25px;
+			margin-bottom: 0px;
+			justify-content: right;}
+		.arrowusa{margin-top: 95px;
+			margin-left: 28px;
+			margin-bottom: 0px;
+			justify-content: right;}
+		.arrowzaf{margin-top: -3px;
+			margin-left: 48px;
+			margin-bottom: 0px;
+			justify-content: right;}
+		.arrowdeu{margin-top: 80px;
+			margin-left: 30px;
+			margin-bottom: 0px;
+			justify-content: right;}
+		.arrowfra{margin-top: 85px;
+			margin-left: 20px;
+			margin-bottom: 0px;
+			justify-content: right;}
+		.arrowgbr{margin-top: 87px;
+			margin-left: 20px;
+			margin-bottom: 0px;
+			justify-content: right;}
+		.arrowaus{margin-top: 205px;
+			margin-left: 15px;
+			margin-bottom: 0px;
+			justify-content: right;}
+
+		
+		.flex{display: flex;}
+		.relative{position: relative;}
+		.absolute{position:  absolute;}
+		.z1{z-index: 1;}
+		.outer{padding: 0px;}
+		.inner{position: absolute;
+	  		bottom: 0; margin: 0; width: 19.5%;}
+	</style>
+</head>
+<body>
+	<section>
+			<div class="exchangerate absolute">
+				<p>Exchange Rate</p>
+				<p>2021-11-17 13:10</p>
+			</div>
+			<div class="subheader absolute">
+				<p>World Minimum Wage in 2021</p>
+				<p style ="font-family: 'Noto Sans', sans-serif; font-weight: 300;">세계 최저임금 비교</style></p>
+			</div>
+			<a href="index.html" class="logo absolute">
+				<img src="logo.svg"  width="140px">
+			</a>
+	</section>
+	<section>
+		<div class="header">World<br>Minimum Wage<br>in 2021</div>
+	</section>
+	<section class="row">
+		<div id="pinkkor">
+			<img src="pinkkor.png" class="z1">
+		</div>
+		<div id="pinkjpn">
+			<img src="pinkjpn.png" class="z1">
+		</div>
+		<div id="pinkzaf">
+			<img src="pinkzaf.png" class="z1">
+		</div>
+	</section>
+	<section class="row absolutegraph">
+		<div class="col-5 outer">
+			<div class="inner">
+				<div id="asia" class="gap">Asia</div>
+				<div id="kor" class="gap">
+					<div class="row boxspace">
+						<h1>SEOUL</h1>
+						<h2>KOR</h2>
+					</div>
+					<div class="row marginright0">
+						<h3>₩8,720</h3>
+						<img src="arrow.svg" width="35px" class="arrowkor">
+					</div>
+				</div>
+				<div id="jpn" class="gap">
+					<div class="row boxspace">
+						<h1>TOKYO</h1>
+						<h2>JPN</h2>
+					</div>
+					<div class="row marginright0">
+						<h3 class="marginjpn">₩10,770</h3>
+						<img src="arrow.svg" width="35px" class="arrowjpn marginjpn">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-5">
+			<div class="inner">
+				<div id="america" class="gap">North America</div>
+				<div id="usa" class="gap">
+					<div class="row boxspace">
+						<h1>WASHINGTON,<br>D.C.</h1>
+						<h2>USA</h2>
+					</div>
+					<div class="row marginright0">
+						<h3 class="marginusa">₩17,678</h3>
+						<img src="arrow.svg" width="35px" class="arrowusa">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-5">
+			<div class="inner">
+				<div id="africa" class="gap">Africa</div>
+				<div id="zaf" class="gap">
+					<div class="row boxspace">
+						<h1>PRETORIA</h1>
+						<h2>ZAF</h2>
+					</div>
+					<div class="row marginright0">
+						<h3 class="marginzaf">₩1,655</h3>
+						<img src="arrow.svg" width="35px" class="arrowzaf">
+					</div>
+				</div>
+			</div>	
+		</div>
+		<div class="col-5">
+			<div class="inner">
+				<div id="europe" class="gap">Europe</div>
+				<div id="deu" class="gap">
+					<div class="row boxspace">
+						<h1>BERLIN</h1>
+						<h2>DEU</h2>
+					</div>
+					<div class="row marginright0">
+						<h3 class="margindeu">₩13,104</h3>
+						<img src="arrow.svg" width="35px" class="arrowdeu">
+					</div>
+				</div>
+				<div id="fra" class="gap">
+					<div class="row boxspace">
+						<h1>PARIS</h1>
+						<h2>FRA</h2>
+					</div>
+					<div class="row marginright0">
+						<h3 class="marginfra">₩14,306</h3>
+						<img src="arrow.svg" width="35px" class="arrowfra">
+					</div>
+				</div>
+				<div id="gbr" class="gap">
+					<div class="row boxspace">
+						<h1>LONDON</h1>
+						<h2>GBR</h2>
+					</div>
+					<div class="row marginright0">
+						<h3 class="margingbr">₩14,294</h3>
+						<img src="arrow.svg" width="35px" class="arrowgbr">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-5">
+			<div class="inner">
+				<div id="australia" class="gap">Australia</div>
+				<div id="aus" class="gap">
+					<div class="row boxspace">
+						<h1>CANBERRA</h1>
+						<h2>AUS</h2>
+					</div>
+					<div class="row marginright0">
+						<h3 class="marginaus">₩23,960</h3>
+						<img src="arrow.svg" width="35px" class="arrowaus">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>COPYRIGHT ©2021 MOON KYEONGSEO</footer>
+
+	<script type="text/javascript">
+		document.getElementById("kor").onmouseover = function() {mouseOver()};
+		document.getElementById("kor").onmouseout = function() {mouseOut()};
+		function mouseOver() {
+  		document.getElementById("pinkkor").style.opacity = "1";}
+		function mouseOut() {
+  		document.getElementById("pinkkor").style.opacity = "0";}
+	</script>
+</body>
+</html>
